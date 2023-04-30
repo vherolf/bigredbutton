@@ -4,10 +4,12 @@ from textual.containers import ScrollableContainer
 from textual.widgets import Button, Static, TextLog
 from textual import events
 #from textual.logging import TextualHandler
+import os
+logdir = os.path.dirname(os.path.realpath(__file__))
 
 logging.basicConfig(
     level=logging.DEBUG,
-    filename='brb.log',
+    filename=os.path.join(logdir,'brb.log'),
     encoding='utf-8'
 )
 

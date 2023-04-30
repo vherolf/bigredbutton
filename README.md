@@ -2,7 +2,7 @@
 
 "Remote" Big Red Button with ssh and textual
 
-Executes a script on a remote ssh server at login.
+Executes a script on a remote ssh server at login.  
 The idea is to have a TUI app automatically pop up at the login.
 
 
@@ -41,13 +41,18 @@ fi
 
 With linux to linux I hab no problems and everything worked fine.
 
-# From Android
+# Testing from Android
+
+```
+DISCALIMER - Android Terminals are made for easy use on touchscreens and are not real terminals and not all events are given thro.
+
+This is only to test what works.
+```
 
 With "JuicySSH" App I had some troubles and quited testing.  
-
 
 With the "Termius" App
 * Button click works
 * Tab works
 * Arrow keys work
-* Drawback is that mouse events are sent as arrow keys. ( test with key3.py )
+* Mouse events are sent as arrow keys. ( test with key3.py )
