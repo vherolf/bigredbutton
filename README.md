@@ -43,16 +43,20 @@ With linux to linux I hab no problems and everything worked fine.
 
 # Testing from Android
 
-**
-DISCALIMER - Android Terminals are made for easy use on touchscreens and are not real terminals and not all events are given thro.
+**DISCALIMER - Android Terminals are made for easy use on touchscreens and are not real terminals and not all events are given through.**
 
-This is only to test what works.
-**
+**These ARE NOT textual issues**
+
+## JuicySSH
 
 With "JuicySSH" App I had some troubles and quited testing, but simple button clicks seems to work.
+
+## Termius
 
 With the "Termius" App
 - [x] Button click works
 - [x] Tab works
 - [x] Arrow keys work
+- [x] TextLog works
+- [ ] Input not tested
 - [ ] Mouse events are sent as arrow keys. ( test with key3.py )
