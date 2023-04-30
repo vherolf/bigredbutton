@@ -43,11 +43,9 @@ With linux to linux I hab no problems and everything worked fine.
 
 # Testing from Android
 
-**
-DISCALIMER - Android Terminals are made for easy use on touchscreens and are not real terminals and not all events are given thro.
+** DISCALIMER - Android Terminals are made for easy use on touchscreens and are not real terminals and not all events are given thro.
 
-This is only to test what works.
-**
+This is only to test what works. **
 
 With "JuicySSH" App I had some troubles and quited testing.  
 
