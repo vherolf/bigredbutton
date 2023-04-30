@@ -1,15 +1,19 @@
 # bigredbutton
+
 "Remote" Big Red Button with ssh and textual
 
-Executes a scrip on a remote ssh server on login.
-The idea is to have a TUI app automatically pop up upon login.
+Executes a script on a remote ssh server at login.
+The idea is to have a TUI app automatically pop up at the login.
 
 
-# installation on remote ssh server
+# Installation on remote ssh server
+
+You can use any textual app.  
+I put this here up for testing only.  
 
 ```
 git clone this <repo>
-cd <repo>
+cd bigredbutton
 python3 -m venv venv
 source venv/bin/activate
 pip install textual
@@ -25,25 +29,25 @@ if [[ -n $SSH_CONNECTION ]] ; then
     # EDIT THIS PATH TO WHERE THE REPO IS
     export BRB="$HOME/projects/bigredbutton"
     source $BRB/venv/bin/activate
-    #python $BRB/brb.py
-    #python $BRB/mouse.py
+    
+    python $BRB/bigredbutton.py
+    # for testing comment the above and use one of these
     #python $BRB/key3.py
-    python $BRB/custom01.py
-
+    #python $BRB/custom01.py
 fi
 ```
 
-# Linux
+# From Linux
 
-With linux to linux I hab no problems and it worked fine.
+With linux to linux I hab no problems and everything worked fine.
 
-# Android
+# From Android
 
-Under Android use "Termius" App. 
-With "JuicySSH" App I had some troubles
+With "JuicySSH" App I had some troubles and quited testing.  
 
-In Termius I played a bit but it seems.
-* Boutton click works
+
+With the "Termius" App
+* Button click works
 * Tab works
 * Arrow keys work
-* Drawback is that mouse events are sent as keys. ( test with key3.py )
+* Drawback is that mouse events are sent as arrow keys. ( test with key3.py )
