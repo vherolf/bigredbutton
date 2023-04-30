@@ -12,51 +12,52 @@ You can use any textual app.
 I put this here up for testing only.  
 
 ```
-git clone this <repo>
+git clone <this repo>
 cd bigredbutton
 python3 -m venv venv
 source venv/bin/activate
 pip install textual
 ```
 
-# ssh (client) config on remote ssh server
+# ssh user config on remote ssh server
 
-Put this in your .zshrc or .bashrc
+In your home directory put this in your .zshrc or .bashrc
+
 ```
 if [[ -n $SSH_CONNECTION ]] ; then
     echo "I am logged in remotely"
     
     # EDIT THIS PATH TO WHERE THE REPO IS
-    export BRB="$HOME/projects/bigredbutton"
-    source $BRB/venv/bin/activate
+    export BIGREDBUTTON="$HOME/projects/bigredbutton"
+    source $BIGREDBUTTON/venv/bin/activate
     
-    python $BRB/bigredbutton.py
+    python $BIGREDBUTTON/bigredbutton.py
     # for testing comment the above and use one of these
-    #python $BRB/key3.py
-    #python $BRB/custom01.py
+    #python $BIGREDBUTTON/key3.py
+    #python $BIGREDBUTTON/custom01.py
 fi
 ```
 
-# From Linux
+# Testing from Linux
 
 With linux to linux I hab no problems and everything worked fine.
 
 # Testing from Android
 
-**DISCALIMER - Android Terminals are made for easy use on touchscreens and are not real terminals and not all events are given through.**
+**DISCALIMER - Android Terminals are made for easy to use on touchscreens and are not real terminals and not all events are given through properly.**
 
-**These ARE NOT textual issues**
-
-## JuicySSH
-
-With "JuicySSH" App I had some troubles and quited testing, but simple button clicks seems to work.
+**These ARE NOT python/textual issues**
 
 ## Termius
 
-With the "Termius" App
+With the **Termius** App
 - [x] Button click works
 - [x] Tab works
 - [x] Arrow keys work
 - [x] TextLog works
 - [ ] Input not tested
 - [ ] Mouse events are sent as arrow keys. ( test with key3.py )
+
+## JuicySSH
+
+With **JuicySSH** App I had some troubles and quited testing, but simple button clicks seems to work.
